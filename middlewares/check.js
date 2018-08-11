@@ -5,7 +5,7 @@ module.exports = {
       req.flash('error', 'Not sign in');
       return res.redirect('/signin');
     }
-    next(),
+    next()
   },
 
   checkNotLogin: function checkNotLogin(req, res, next) {
@@ -14,6 +14,6 @@ module.exports = {
       req.flash('error', 'Have already signed in');
       return res.redirect('back'); // 返回到之前的页面
     }
-    next(),
+    next()
   }
 }
